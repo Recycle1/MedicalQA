@@ -7,7 +7,7 @@ class MedicalGraph:
     def __init__(self):
         cur_dir = '/'.join(os.path.abspath(__file__).split('/')[:-1])
         self.data_path = os.path.join(cur_dir, 'data/medical.json')
-        self.driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "Wshyh010926!"))
+        self.driver = GraphDatabase.driver("bolt://localhost:7687", auth=("neo4j", "**********"))
 
     def close(self):
         self.driver.close()
