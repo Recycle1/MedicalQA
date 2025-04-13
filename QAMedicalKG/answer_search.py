@@ -5,7 +5,7 @@ class AnswerSearcher:
     def __init__(self):
         self.uri = "bolt://localhost:7687"
         self.username = "neo4j"
-        self.password = "Wshyh010926!"
+        self.password = "***********"
         self.driver = GraphDatabase.driver(self.uri, auth=(self.username, self.password))
         self.num_limit = 20
 
